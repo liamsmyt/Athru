@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athru</title>
+  </head>
+  <body>
+    <button class="toggle-btn" onclick="toggleText()">Toggle Text</button>
+
+    <div class="slider-container">
+      <label for="difficultySlider">Select Difficulty Level:</label>
+      <input
+        type="range"
+        id="difficultySlider"
+        class="slider"
+        min="0"
+        max="2"
+        step="1"
+        value="0"
+        oninput="updateLevel()"
+      />
+      <p class="level-label">
+        Current Level: <span id="difficultyLevel">Easy</span>
+      </p>
+    </div>
+
+    <div class="text-box">
+      <p id="text">
+        Long ago, a poor man was working on the landlord's field. One day, the
+        lord saw the man working hard and said to him, Why don't you get up from
+        my land and move to better land? The man looked up and replied, When I
+        die, Lord, I will move to better land than this. The lord understood the
+        message and began treating his workers better.
+      </p>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
